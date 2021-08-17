@@ -29,7 +29,7 @@ $color-background-and-button: #f6f6f6;
 .header{
     &__logo{
         @include center-content;
-        padding: 10px 0px;
+        padding: 15px 0px 10px 0px;
     }
         a img{
             height: 30px;
@@ -81,7 +81,7 @@ $color-background-and-button: #f6f6f6;
     width: 90%;
     padding: 60px 0px;
     h1{
-        margin: 0px 0px 20px 15px;
+        margin: 0px 0px 20px 0px;
     }
     &__grid{
         display:grid;
@@ -141,9 +141,8 @@ $color-background-and-button: #f6f6f6;
         gap: 30px;
         &__bloc{
             border-radius: 25px;
-            height: 200px;
             display: grid;
-            grid-template-rows: 150px 60px;
+            grid-template-rows: 180px 80px;
             @include shadow;
             &__img-1{
                 background: url(ASSETS/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg) center/cover;
@@ -170,9 +169,29 @@ $color-background-and-button: #f6f6f6;
                 @include center-content;
                 align-items: center;
                 color: #008766;
+                font-weight: 600;
                 margin: 15px 15px 0px 0px;
-                float: right;
-                
+                float: right; 
+            }
+            &__description{
+                display: grid;
+                grid-template-columns: 90% 10%;
+                align-items: center;
+                color: black;
+                padding: 10px 20px;
+                h1{
+                    font-size: 1.1rem;
+                    font-weight: 600;
+                    margin-bottom: 5px;
+                    
+                }
+                h2{
+                    font-size: 1rem;
+                    font-weight: normal;
+                }
+                i{
+                    font-size: 1.3rem;
+                }
             }
         }
     }

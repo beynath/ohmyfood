@@ -16,7 +16,7 @@ a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 10px 0px;
+  padding: 15px 0px 10px 0px;
 }
 
 .header a img {
@@ -82,7 +82,7 @@ a {
 }
 
 .nav h1 {
-  margin: 0px 0px 20px 15px;
+  margin: 0px 0px 20px 0px;
 }
 
 .nav__grid {
@@ -166,11 +166,10 @@ a {
 
 .restaurants__grid__bloc {
   border-radius: 25px;
-  height: 200px;
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 150px 60px;
-      grid-template-rows: 150px 60px;
+  -ms-grid-rows: 180px 80px;
+      grid-template-rows: 180px 80px;
   -webkit-box-shadow: 0px 5px 10px #cfcfcf;
           box-shadow: 0px 5px 10px #cfcfcf;
 }
@@ -211,7 +210,35 @@ a {
       -ms-flex-align: center;
           align-items: center;
   color: #008766;
+  font-weight: 600;
   margin: 15px 15px 0px 0px;
   float: right;
+}
+
+.restaurants__grid__bloc__description {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 90% 10%;
+      grid-template-columns: 90% 10%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: black;
+  padding: 10px 20px;
+}
+
+.restaurants__grid__bloc__description h1 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.restaurants__grid__bloc__description h2 {
+  font-size: 1rem;
+  font-weight: normal;
+}
+
+.restaurants__grid__bloc__description i {
+  font-size: 1.3rem;
 }
 /*# sourceMappingURL=styles.css.map */
