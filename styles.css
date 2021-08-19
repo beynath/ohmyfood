@@ -241,4 +241,48 @@ a {
 .restaurants__grid__bloc__description i {
   font-size: 1.3rem;
 }
+
+/* FOOTER */
+footer {
+  background-color: #353535;
+  height: 250px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .footer-content {
+  margin-left: 15px;
+}
+
+footer .footer-content h1 {
+  margin-bottom: 15px;
+}
+
+footer .footer-content h1 a {
+  color: #ffffff;
+  font-family: Shrikhand, sans-serif;
+  font-weight: 400;
+  font-size: 1.3rem;
+}
+
+footer .footer-content li {
+  list-style-type: none;
+  line-height: 30px;
+}
+
+footer .footer-content li ul a {
+  color: #ffffff;
+}
+
+footer .footer-content li ul a:hover {
+  text-decoration: underline;
+}
+
+footer .footer-content li i {
+  margin-right: 10px;
+}
 /*# sourceMappingURL=styles.css.map */
