@@ -25,6 +25,60 @@ $color-footer-and-location: #353535;
     box-shadow: 0px 5px 10px #cfcfcf;
 }
 
+/*LOADER*/
+
+.loader{
+    background: rgba(255, 255, 255, 0.712);
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    animation: loader 2s linear;
+    animation-iteration-count: 1;
+    visibility: hidden;
+    &__animation{
+        border: 10px solid $terciary-color;
+        border-top: 10px solid $primary-color;
+        border-bottom: 10px solid $secondary-color;
+        border-radius: 50%;
+        width: 100px;
+        height: 100px;
+        margin: auto;
+        position: absolute;
+        top: 0; 
+        left: 0;
+        bottom: 0;
+        right: 0;
+        animation: spin 1.5s linear infinite;
+    }
+}
+
+@keyframes spin{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes loader{
+    0%{
+        visibility: visible;
+        opacity: 1;
+    }
+    75%{visibility: visible;
+        opacity: 1;
+    }
+    100%{
+        visibility: hidden;
+        opacity: 0;
+    }
+}
+
+
+
+
+
 /* HEADER */
 
 .header{
