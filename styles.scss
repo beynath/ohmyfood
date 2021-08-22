@@ -1,6 +1,6 @@
 *{
    
-    font-family: Roboto;
+    font-family: Roboto, sans-serif;
     padding: 0;
     margin: 0;
     
@@ -16,6 +16,10 @@ $terciary-color: #99E2D0;
 $color-background-and-button: #f6f6f6;
 $color-footer-and-location: #353535;
 
+@mixin font-2 { 
+    font-family: Shrikhand, sans-serif;
+}
+
 @mixin center-content {
     display: flex;
     justify-content: center;
@@ -25,7 +29,7 @@ $color-footer-and-location: #353535;
     box-shadow: 0px 5px 10px #cfcfcf;
 }
 
-/*LOADER*/
+/*LOADER SPINNER*/
 
 .loader{
     background: rgba(255, 255, 255, 0.712);
@@ -33,7 +37,6 @@ $color-footer-and-location: #353535;
     height: 100%;
     width: 100%;
     animation: loader 2s linear;
-    animation-iteration-count: 1;
     visibility: hidden;
     &__animation{
         border: 10px solid $terciary-color;
@@ -66,7 +69,8 @@ $color-footer-and-location: #353535;
         visibility: visible;
         opacity: 1;
     }
-    75%{visibility: visible;
+    75%{
+        visibility: visible;
         opacity: 1;
     }
     100%{
@@ -74,9 +78,6 @@ $color-footer-and-location: #353535;
         opacity: 0;
     }
 }
-
-
-
 
 
 /* HEADER */
@@ -97,6 +98,7 @@ $color-footer-and-location: #353535;
         font-size: 1rem;
         font-weight: 600;
         height: 50px;
+        
         i{
             margin-right: 15px;
         }
@@ -125,6 +127,10 @@ $color-footer-and-location: #353535;
             background: linear-gradient(154deg,#ff79da 0%, #9356dc 80%);
             padding: 15px 15px;
         }
+    }
+    /*PAGES MENU */ 
+    &__photo img{
+        width: 100%;
     }
 }
 
@@ -252,6 +258,29 @@ $color-footer-and-location: #353535;
     }
 }
 
+/*MAIN MENU*/
+
+.menu{
+    background: $color-background-and-button;
+    border-radius: 30px 30px 0px 0px;
+    margin-top: -30px;
+    position: relative;
+    width: 100%;
+    &__title{
+        @include center-content;
+        padding: 30px 40px 20px 20px;
+        justify-content: space-between;
+        h1{
+            @include font-2;
+            font-size: 1.7rem;
+        }
+        i{
+            font-size: 1.8rem;
+        }
+
+    }
+}
+
 /* FOOTER */
 
 footer{
@@ -265,7 +294,7 @@ footer{
             margin-bottom: 15px;
             a{
                 color: #ffffff;
-                font-family: Shrikhand, sans-serif;
+                @include font-2;
                 font-weight: 400;
                 font-size: 1.3rem;
             }
