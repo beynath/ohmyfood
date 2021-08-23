@@ -94,17 +94,21 @@ a {
 }
 
 .header__logo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   padding: 15px 0px 10px 0px;
+  text-align: center;
 }
 
-.header a img {
+.header__logo img {
   height: 30px;
+}
+
+.header__logo i {
+  /* PAGES MENU*/
+  font-size: 1.5rem;
+  color: black;
+  margin-left: 20px;
+  margin-right: -35px;
+  float: left;
 }
 
 .header__location {
@@ -158,8 +162,24 @@ a {
   padding: 15px 15px;
 }
 
-.header__photo img {
-  width: 100%;
+.header__photo--1 {
+  height: 250px;
+  background: url(ASSETS/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg) center/cover;
+}
+
+.header__photo--2 {
+  height: 250px;
+  background: url(ASSETS/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg) center/cover;
+}
+
+.header__photo--3 {
+  height: 250px;
+  background: url(ASSETS/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg) center/cover;
+}
+
+.header__photo--4 {
+  height: 250px;
+  background: url(ASSETS/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg) center/cover;
 }
 
 /* MAIN : NAVIGATION */
@@ -337,6 +357,7 @@ a {
   margin-top: -30px;
   position: relative;
   width: 100%;
+  padding-bottom: 90px;
 }
 
 .menu__title {
@@ -359,6 +380,75 @@ a {
 
 .menu__title i {
   font-size: 1.8rem;
+}
+
+.menu__grid {
+  margin: 0px 15px;
+  display: -ms-grid;
+  display: grid;
+  row-gap: 40px;
+}
+
+.menu__grid__container h2 {
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 1.3rem;
+  margin-bottom: 5px;
+}
+
+.menu__grid__container__underlign {
+  width: 50px;
+  height: 1px;
+  border: 1px solid #99E2D0;
+  background: #99E2D0;
+  margin-bottom: 20px;
+}
+
+.menu__grid__container__content {
+  display: -ms-grid;
+  display: grid;
+  row-gap: 15px;
+}
+
+.menu__grid__container__content__list {
+  background-color: white;
+  padding: 15px 20px 15px 15px;
+  border-radius: 15px;
+  -webkit-box-shadow: 0px 5px 10px #cfcfcf;
+          box-shadow: 0px 5px 10px #cfcfcf;
+}
+
+.menu__grid__container__content__list h3 {
+  margin-bottom: 5px;
+}
+
+.menu__grid__container__content__list span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.menu__grid__container__content__list span .price {
+  font-weight: 600;
+}
+
+.menu__button {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.menu__button a {
+  -webkit-box-shadow: 0px 5px 10px #cfcfcf;
+          box-shadow: 0px 5px 10px #cfcfcf;
+  color: white;
+  font-size: 1rem;
+  border-radius: 25px;
+  background: #ff79da;
+  background: linear-gradient(154deg, #ff79da 0%, #9356dc 80%);
+  padding: 15px 40px;
 }
 
 /* FOOTER */

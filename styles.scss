@@ -84,12 +84,20 @@ $color-footer-and-location: #353535;
 
 .header{
     &__logo{
-        @include center-content;
         padding: 15px 0px 10px 0px;
-    }
-        a img{
-            height: 30px;
+        text-align: center;
+            img{
+                height: 30px;
+                
+            }
+        i{/* PAGES MENU*/
+            font-size: 1.5rem;
+            color: black;
+            margin-left: 20px;
+            margin-right: -35px;
+            float: left;
         }
+    }
     &__location{
         @include center-content;
         align-items: center;
@@ -129,8 +137,21 @@ $color-footer-and-location: #353535;
         }
     }
     /*PAGES MENU */ 
-    &__photo img{
-        width: 100%;
+    &__photo--1{
+        height: 250px;
+        background: url(ASSETS/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg) center/cover;
+    }
+    &__photo--2{
+        height: 250px;
+        background: url(ASSETS/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg) center/cover;
+    }
+    &__photo--3{
+        height: 250px;
+        background: url(ASSETS/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg) center/cover;
+    }
+    &__photo--4{
+        height: 250px;
+        background: url(ASSETS/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg) center/cover;
     }
 }
 
@@ -266,6 +287,7 @@ $color-footer-and-location: #353535;
     margin-top: -30px;
     position: relative;
     width: 100%;
+    padding-bottom: 90px;
     &__title{
         @include center-content;
         padding: 30px 40px 20px 20px;
@@ -277,7 +299,60 @@ $color-footer-and-location: #353535;
         i{
             font-size: 1.8rem;
         }
-
+    }
+    &__grid{
+        margin: 0px 15px;
+        display: grid;
+        row-gap: 40px;
+        &__container{
+            h2{
+                text-transform: uppercase;
+                font-weight: 400;
+                font-size: 1.3rem;
+                margin-bottom: 5px;
+            }
+            &__underlign{
+                width: 50px;
+                height: 1px;
+                border: 1px solid $terciary-color;
+                background: $terciary-color;
+                margin-bottom: 20px;
+                
+            }
+            &__content{
+                display: grid;
+                row-gap: 15px;
+                &__list{
+                    background-color: white;
+                    padding: 15px 20px 15px 15px;
+                    border-radius: 15px;
+                    @include shadow;
+                    h3{
+                        margin-bottom: 5px;
+                    }
+                    span{
+                        display: flex;
+                        justify-content: space-between;
+                        .price{
+                            font-weight: 600;
+                        }
+                    }
+                }
+            }
+        } 
+    }
+    &__button{
+        margin-top: 30px;
+        text-align: center;
+        a{
+            @include shadow;
+            color: white;
+            font-size: 1rem;
+            border-radius: 25px;
+            background: #ff79da;
+            background: linear-gradient(154deg,#ff79da 0%, #9356dc 80%);
+            padding: 15px 40px;
+        }
     }
 }
 
