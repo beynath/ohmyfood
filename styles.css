@@ -436,8 +436,8 @@ a {
 }
 
 .menu__button {
-  margin-top: 30px;
   text-align: center;
+  margin-top: 60px;
 }
 
 .menu__button a {
@@ -493,5 +493,48 @@ footer .footer-content li ul a:hover {
 
 footer .footer-content li i {
   margin-right: 10px;
+}
+
+@media screen and (min-width: 800px) {
+  .nav__grid {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+    height: 80px;
+  }
+  .restaurants h1 {
+    padding-left: 50px;
+  }
+  .restaurants__grid {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    gap: 30px;
+    padding: 0px 50px;
+  }
+  footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  footer .footer-content {
+    text-align: center;
+  }
+  /* PAGES MENu */
+  .menu__grid {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
