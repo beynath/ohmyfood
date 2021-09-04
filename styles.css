@@ -162,6 +162,13 @@ a {
   padding: 15px 15px;
 }
 
+.header__button-bloc a:hover {
+  background: #fa90dc;
+  background: linear-gradient(154deg, #fa90dc 0%, #a981da 80%);
+  -webkit-box-shadow: 0px 7px 10px #4d3b3ba1;
+          box-shadow: 0px 7px 10px #4d3b3ba1;
+}
+
 .header__photo--1 {
   height: 250px;
   background: url(ASSETS/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg) center/cover;
@@ -282,6 +289,11 @@ a {
           box-shadow: 0px 5px 10px #cfcfcf;
 }
 
+.restaurants__grid__bloc:hover {
+  -webkit-box-shadow: 0px 7px 10px #4d3b3ba1;
+          box-shadow: 0px 7px 10px #4d3b3ba1;
+}
+
 .restaurants__grid__bloc__img-1 {
   background: url(ASSETS/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg) center/cover;
   border-radius: 25px 25px 0px 0px;
@@ -389,6 +401,41 @@ a {
   row-gap: 40px;
 }
 
+.menu__grid__container--animation-1 {
+  -webkit-animation: apparition 2s linear 0.1s forwards;
+          animation: apparition 2s linear 0.1s forwards;
+}
+
+.menu__grid__container--animation-2 {
+  -webkit-animation: apparition 2s linear 0.9s forwards;
+          animation: apparition 2s linear 0.9s forwards;
+  opacity: 0;
+}
+
+.menu__grid__container--animation-3 {
+  -webkit-animation: apparition 2s linear 1.8s forwards;
+          animation: apparition 2s linear 1.8s forwards;
+  opacity: 0;
+}
+
+@-webkit-keyframes apparition {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes apparition {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 .menu__grid__container h2 {
   text-transform: uppercase;
   font-weight: 400;
@@ -411,6 +458,7 @@ a {
 }
 
 .menu__grid__container__content__list {
+  color: black;
   background-color: white;
   padding: 15px 20px 15px 15px;
   border-radius: 15px;
@@ -435,6 +483,21 @@ a {
   font-weight: 600;
 }
 
+.menu__grid__container__content__list:hover {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 80px;
+      grid-template-columns: 1fr 80px;
+}
+
+.menu__grid__container__content__list__select {
+  width: 80px;
+  background: #99E2D0;
+  color: white;
+  font-size: 2.2rem;
+  overflow: hidden;
+}
+
 .menu__button {
   text-align: center;
   margin-top: 60px;
@@ -449,6 +512,13 @@ a {
   background: #ff79da;
   background: linear-gradient(154deg, #ff79da 0%, #9356dc 80%);
   padding: 15px 40px;
+}
+
+.menu__button a:hover {
+  background: #fa90dc;
+  background: linear-gradient(154deg, #fa90dc 0%, #a981da 80%);
+  -webkit-box-shadow: 0px 7px 10px #4d3b3ba1;
+          box-shadow: 0px 7px 10px #4d3b3ba1;
 }
 
 /* FOOTER */

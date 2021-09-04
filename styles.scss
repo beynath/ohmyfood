@@ -29,6 +29,15 @@ $color-footer-and-location: #353535;
     box-shadow: 0px 5px 10px #cfcfcf;
 }
 
+@mixin shadow-hover{
+    box-shadow: 0px 7px 10px #4d3b3ba1;
+}
+
+@mixin button-hover{
+    background: #fa90dc;
+    background: linear-gradient(154deg,#fa90dc 0%, #a981da 80%);
+}
+
 /*LOADER SPINNER*/
 
 .loader{
@@ -134,6 +143,10 @@ $color-footer-and-location: #353535;
             background: #ff79da;
             background: linear-gradient(154deg,#ff79da 0%, #9356dc 80%);
             padding: 15px 15px;
+            &:hover{
+                @include button-hover;
+                @include shadow-hover;
+            }
         }
     }
     /*PAGES MENU */ 
@@ -226,6 +239,9 @@ $color-footer-and-location: #353535;
             display: grid;
             grid-template-rows: 180px 80px;
             @include shadow;
+            &:hover{
+                @include shadow-hover;
+            }
             &__img-1{
                 background: url(ASSETS/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg) center/cover;
                 border-radius: 25px 25px 0px 0px;
@@ -304,6 +320,25 @@ $color-footer-and-location: #353535;
         display: grid;
         row-gap: 40px;
         &__container{
+            &--animation-1{
+                animation: apparition 2s linear 0.1s forwards;
+            }
+            &--animation-2{
+                animation: apparition 2s linear 0.9s forwards;
+                opacity: 0;
+            }
+            &--animation-3{
+                animation: apparition 2s linear 1.8s forwards;
+                opacity: 0;
+            }
+            @keyframes apparition {
+                from{
+                    opacity: 0;
+                }
+                to{
+                    opacity: 1;
+                }
+            }
             h2{
                 text-transform: uppercase;
                 font-weight: 400;
@@ -322,6 +357,7 @@ $color-footer-and-location: #353535;
                 display: grid;
                 row-gap: 15px;
                 &__list{
+                    color: black;
                     background-color: white;
                     padding: 15px 20px 15px 15px;
                     border-radius: 15px;
@@ -335,6 +371,17 @@ $color-footer-and-location: #353535;
                         .price{
                             font-weight: 600;
                         }
+                    }
+                    &:hover{
+                        display: grid;
+                        grid-template-columns: 1fr 80px;
+                       
+                    }
+                    &__select{
+                        width: 80px;
+                        background: $terciary-color;
+                        color: white;
+                        font-size: 2.2rem;
                     }
                 }
             }
@@ -351,6 +398,10 @@ $color-footer-and-location: #353535;
             background: #ff79da;
             background: linear-gradient(154deg,#ff79da 0%, #9356dc 80%);
             padding: 15px 40px;
+            &:hover{
+                @include button-hover;
+                @include shadow-hover;
+            }
         }
     }
 }
