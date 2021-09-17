@@ -227,7 +227,7 @@ $color-footer-and-location: #353535;
 .restaurants{
     background: $color-background-and-button;
     padding: 40px 15px;
-    h1{
+    h2{
         margin-bottom: 20px;
     }
     &__grid{
@@ -277,12 +277,12 @@ $color-footer-and-location: #353535;
                 align-items: center;
                 color: black;
                 padding: 10px 20px;
-                    h1{
+                    h2{
                         font-size: 1.1rem;
                         font-weight: 600;
                         margin-bottom: 5px;
                     }
-                    h2{
+                    p{
                         font-size: 1rem;
                         font-weight: normal;
                     }

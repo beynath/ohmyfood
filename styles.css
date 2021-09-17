@@ -267,7 +267,7 @@ a {
   padding: 40px 15px;
 }
 
-.restaurants h1 {
+.restaurants h2 {
   margin-bottom: 20px;
 }
 
@@ -347,13 +347,13 @@ a {
   padding: 10px 20px;
 }
 
-.restaurants__grid__bloc__description h1 {
+.restaurants__grid__bloc__description h2 {
   font-size: 1.1rem;
   font-weight: 600;
   margin-bottom: 5px;
 }
 
-.restaurants__grid__bloc__description h2 {
+.restaurants__grid__bloc__description p {
   font-size: 1rem;
   font-weight: normal;
 }
