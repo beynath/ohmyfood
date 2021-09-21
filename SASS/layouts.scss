@@ -1,0 +1,114 @@
+/* HEADER */
+
+.header{
+    &__logo{
+        padding: 15px 0px 10px 0px;
+        text-align: center;
+            img{
+                height: 30px;
+                
+            }
+        i{/* PAGES MENU*/
+            font-size: 1.5rem;
+            color: black;
+            margin-left: 20px;
+            margin-right: -35px;
+            float: left;
+        }
+    }
+    &__location{
+        @include center-content;
+        align-items: center;
+        background: #eaeaea;
+        color: $color-footer-and-location;
+        font-size: 1rem;
+        font-weight: 600;
+        height: 50px;
+        
+        i{
+            margin-right: 15px;
+        }
+    }
+    &__button-bloc{
+        text-align: center;
+        background: $color-background-and-button;
+        padding: 50px 0px 70px 0px;
+        h1{
+            font-size: 1.5rem;
+            font-weight:800;
+            margin: 0px 50px 20px 50px;
+        }
+        h2{
+            color: #353535;
+            font-weight: normal;
+            font-size: 1rem;
+            margin: 0px 30px 40px 30px;
+        }
+        a{
+            @include shadow;
+            color: white;
+            font-size: 0.9rem;
+            border-radius: 25px;
+            background: #ff79da;
+            background: linear-gradient(154deg,#ff79da 0%, #9356dc 80%);
+            padding: 15px 15px;
+            transition: 0.5s;
+            &:hover{
+                @include button-hover;
+                @include shadow-hover;
+            }
+        }
+    }
+    /*PAGES MENU */ 
+    &__photo--1{
+        height: 250px;
+        background: url(ASSETS/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg) center/cover;
+    }
+    &__photo--2{
+        height: 250px;
+        background: url(ASSETS/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg) center/cover;
+    }
+    &__photo--3{
+        height: 250px;
+        background: url(ASSETS/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg) center/cover;
+    }
+    &__photo--4{
+        height: 250px;
+        background: url(ASSETS/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg) center/cover;
+    }
+}
+
+
+/* FOOTER */
+
+footer{
+    background-color: $color-footer-and-location;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    .footer-content{
+        margin-left: 15px;
+        h1{
+            margin-bottom: 15px;
+            a{
+                color: white;
+                @include font-2;
+                font-weight: 400;
+                font-size: 1.3rem;
+            }
+        }
+        ul{
+            list-style-type: none;
+            line-height: 30px;
+            li a{
+                color: white;
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
+            i{
+                margin-right: 10px;
+            }
+        }
+    }
+    }
