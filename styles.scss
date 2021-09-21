@@ -1,6 +1,78 @@
 @import url(_utils.scss);
 @import url(_animations.scss);
-    
+
+
+/* VARIABLES ET MIXINS*/
+
+
+$primary-color: #9356DC;
+$secondary-color: #FF79DA;
+$terciary-color: #99E2D0;
+$color-background-and-button: #f6f6f6;
+$color-footer-and-location: #353535;
+
+@mixin font-2 { 
+    font-family: Shrikhand, sans-serif;
+}
+
+@mixin center-content {
+    display: flex;
+    justify-content: center;
+}
+
+@mixin shadow{
+    box-shadow: 0px 5px 10px #cfcfcf;
+}
+
+@mixin shadow-hover{
+    box-shadow: 0px 7px 10px #4d3b3ba1;
+}
+
+@mixin button-hover{
+    background: #fa90dc;
+    background: linear-gradient(154deg,#fa90dc 0%, #a981da 80%);
+}
+
+
+/* ANIMATIONS */
+
+@keyframes spin{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes loader{
+    0%{
+        visibility: visible;
+        opacity: 1;
+    }
+    75%{
+        visibility: visible;
+        opacity: 1;
+    }
+    100%{
+        visibility: hidden;
+        opacity: 0;
+    }
+}
+
+
+
+@keyframes apparition {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+
+/*GENERAL*/
 
 *{
    
@@ -97,6 +169,7 @@ a{
             background: #ff79da;
             background: linear-gradient(154deg,#ff79da 0%, #9356dc 80%);
             padding: 15px 15px;
+            transition: 0.5s;
             &:hover{
                 @include button-hover;
                 @include shadow-hover;
@@ -193,6 +266,7 @@ a{
             display: grid;
             grid-template-rows: 180px 80px;
             @include shadow;
+            transition: 0.5s;
             &:hover{
                 @include shadow-hover;
             }
@@ -425,6 +499,7 @@ a{
             background: #ff79da;
             background: linear-gradient(154deg,#ff79da 0%, #9356dc 80%);
             padding: 15px 40px;
+            transition: 0.5s;
             &:hover{
                 @include button-hover;
                 @include shadow-hover;
@@ -445,7 +520,7 @@ footer{
         h1{
             margin-bottom: 15px;
             a{
-                color: #ffffff;
+                color: white;
                 @include font-2;
                 font-weight: 400;
                 font-size: 1.3rem;
@@ -455,7 +530,7 @@ footer{
             list-style-type: none;
             line-height: 30px;
             li a{
-                color: #ffffff;
+                color: white;
                 &:hover{
                     text-decoration: underline;
                 }
@@ -504,9 +579,6 @@ footer{
                 display: grid;
                 grid-template-columns: 1fr 1fr 1fr;
                 gap: 30px;
-            }
-            &__button{
-                
             }
         }
 
